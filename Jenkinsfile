@@ -16,7 +16,7 @@ pipeline{
 
             stage('Building Image'){
                 steps{
-                    sh 'docker build -t stevesam/nodeapp:latest -f node.dockerfile'
+                    sh 'docker build -t stevesam/nodeapp:latest -f node.dockerfile .'
                 }
             }
 
